@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int numa =0 , numb=0, numc=0;
+  int suma=0 , sumb=0, sumc=0;
+  
+   for(numa=1;numa<10;numa++){
+     if(numa%2==0)
+     suma+=numa;
+     else
+     suma-=numa;
+   }
+   cout<<numa<<" "<<suma<<endl;
+   
+   while(numb<5){
+     numb+=2;
+     do{
+       sumb+=numb;
+     }while(sumb<10);
+   }
+   cout<<numb<<" "<<sumb<<endl;
+   
+   while(sumc<30){
+     sumc+=numc;
+     if(sumc>20) continue;
+     if(numc>10) break;
+     numc++;
+   }
+   cout<<numc<<" "<<sumc<<endl;
+  return 0;
+}
