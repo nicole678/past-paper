@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+  int x=3;
+  int y=10;
+  
+  void f(int a,int &b){
+    int x=4;
+    b=a+x;
+    a=8;
+    cout<<x<<endl;
+  }
+  int g(int&c,int d){
+      int y=4;
+      c=x+y;
+      return y*d;
+  }
+
+int main(){
+    int x=5,z=7;
+    f(x,z);
+    cout<<x<<endl;
+    cout<<g(x,y)<<endl;
+    cout<<x<<" "<<y<<" "<<z<<endl;
+
+  return 0;
+}
