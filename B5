@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int num =0;
+
+void fn(int a,int b){
+    num=num+a;
+    cout<<a<<":"<<num<<endl;
+    
+    switch(b%a){
+        case1:fn(a,b+1); break;
+        case2:fn(a-1,b); break;
+    }
+    num=num+b;
+    cout<<b<<":"<<num<<endl;
+}
+int main(){
+    fn(3,5);
+    return 0;
+}
